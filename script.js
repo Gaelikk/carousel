@@ -94,6 +94,18 @@ window.onload = function () {
     $botonPlay.disabled = false;
   }
 
+  document.addEventListener('keydown', function(e) {
+    switch (e.keyCode) {
+        case 37:
+           retrocederFoto();
+           break;
+        case 39:
+          pasarFoto();    
+          break;
+       
+    }
+});
+
   // Eventos
   // Añadimos los evenntos necesarios para cada boton. Mediante addEventListener.
 
